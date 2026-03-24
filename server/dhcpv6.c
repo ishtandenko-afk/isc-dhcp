@@ -7670,13 +7670,14 @@ build_dhcpv6_reply(struct data_string *reply, struct packet *packet) {
 
 static void
 log_packet_in(const struct packet *packet) {
+	if (packet->dhcpv6_msg_type == DHCPV6_ADDR_REG_INFORM)
+		return;
 	struct data_string s;
 	u_int32_t tid;
 	char tmp_addr[INET6_ADDRSTRLEN];
 	const void *addr;
 
 	memset(&s, 0, sizeof(s));
-
 	if (packet->dhcpv6_msg_type < dhcpv6_type_name_max) {
 		data_string_sprintfa(&s, "%s message from %s port %d",
 				     dhcpv6_type_names[packet->dhcpv6_msg_type],
