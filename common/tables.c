@@ -686,20 +686,20 @@ const char *dhcpv6_type_names[] = {
 	"Reconfigure-reply",
 	"Dhcpv4-query",
 	"Dhcpv4-response",
-	NULL, /* 22 */
-	NULL, /* 23 */
-	NULL, /* 24 */
-	NULL, /* 25 */
-	NULL, /* 26 */
-	NULL, /* 27 */
-	NULL, /* 28 */
-	NULL, /* 29 */
-	NULL, /* 30 */
-	NULL, /* 31 */
-	NULL, /* 32 */
-	NULL, /* 33 */
-	NULL, /* 34 */
-	NULL, /* 35 */
+	"", /* 22 */
+	"", /* 23 */
+	"", /* 24 */
+	"", /* 25 */
+	"", /* 26 */
+	"", /* 27 */
+	"", /* 28 */
+	"", /* 29 */
+	"", /* 30 */
+	"", /* 31 */
+	"", /* 32 */
+	"", /* 33 */
+	"", /* 34 */
+	"", /* 35 */
 	"Addr-reg-inform" /* 36 */
 };
 const int dhcpv6_type_name_max =
